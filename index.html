@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakes of Myanmar</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- aos css library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ec00f89d6d.js" crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Start with home page -->
+    <header class="home position-relative" id="home">
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class="container-fluid px-5">
+                <a href="#home" class="navbar-brand">
+                    <img src="img/snake-logo.png" class="logo-img" alt="snake logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item main-nav px-5 active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item main-nav px-5">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item main-nav px-5">
+                        <a href="#snakes" class="nav-link">Snakes</a>
+                    </li>
+                </ul>
+                <a href="https://www.facebook.com/groups/1305497066495597/" target="_blank" class="btn p-2">
+                    <span>Snake Group</span>
+                </a>
+
+            </div>
+        </nav>
+        <section class="main-content container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row mb-5 d-flex justify-content-between
+            align-items-center g-5">
+                <div class="col-md-6 content-box">
+                    <h1 class="mb-4">Snakes of Myanmar</h1>
+                    <p>Here, you can search for various snake species existing in Myanmar. Discover their
+                        species and
+                        understand the potential
+                        danger associated with each snake. Embark on a journey of exploration and knowledge, delving
+                        into the captivating
+                        diversity of Myanmar's serpentine inhabitants.</p>
+                    <p class="mb-5">1. သဘာဝတွင်တွေ့ရှိရသော မြွေများကို ပုံနှင့်တကွ ပြသထားပါသည်။
+                        <br> 2. မြွေပုံကိုနှိပ်၍ ထိုမြွေနှင့်ပတ်သက်သော အကြောင်းအရာ၊ အဆိပ်ရှိမရှိ၊ အန္တရာယ်ရှိမရှိ
+                        ကိုဖတ်ရှုနိုင်ပါသည်။
+                    </p>
+                    <a href="#snakes" class="btn">Learn More</a>
+                </div>
+                <div class="home-snake-box col-md-6">
+                    <img src="img/home-snake.png" alt="home page snake">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- About Page -->
+    <section class="about position-relative" id="about">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 mt-5">
+                    <h2 class="mb-5 text-center">About This Webpage</h2>
+                    <div class="about-content container" data-aos="zoom-in" data-aos-duration="1000">
+                        <p class="mb-4">Welcome to the Captivating Realm of Myanmar's Snakes! <br>
+                            Explore the diverse array of snake species🐍 indigenous to Myanmar within our platform.
+                            Gain
+                            insights into each
+                            species, including their taxonomy and potential threat levels, providing a comprehensive
+                            understanding of these
+                            fascinating creatures.
+                        </p>
+                        <p class="mb-4">
+                            Key Features: <br>
+
+                            🌐 Comprehensive Snake Database: Navigate through an extensive collection detailing
+                            Myanmar's
+                            rich snake diversity. <br>
+                            📖 Species Identification: Access precise information about each snake's characteristics
+                            and
+                            behaviors. <br>
+                            ⚠️ Safety Assessment: Learn about the potential threat levels associated with each
+                            species.
+                        </p>
+                        <div class="mt-5">
+                            <p>
+                                Safety First: <br>
+                                Understanding potential threats is crucial for anyone venturing into snake-inhabited
+                                <br>
+                                regions. Our safety assessment <br>
+                                feature equips you with essential knowledge about the danger levels associated with each
+                                <br>
+                                species. Learn to identify <br>
+                                warning signs and make informed decisions when encountering these magnificent creatures
+                                in
+                                <br>
+                                the wild.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- snakes -->
+    <section class="snakes position-relative" id="snakes">
+        <div class="snake-category-header container d-block">
+            <h3 class="text-center my-5 h1">Snakes</h3>
+            <ul class="nav nav-tabs nav-fill mb-5">
+                <li class="nav-item">
+                    <a href="#allSpecies" class="nav-link snake-tab snake-category-tab active" data-bs-toggle="tab">All
+                        species</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#venomous" class="nav-link snake-tab venom-tab" data-bs-toggle="tab">Venomous Snakes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#nonvenomous" class="nav-link snake-tab nonvenom-tab" data-bs-toggle="tab">Nonvenomous
+                        Snakes</a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-holder d-none">
+            <button class="btn btn-back mb-3">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row mb-5 g-3 snake-category d-flex" id="allSpecies">
+
+            </div>
+            <div class="venomous row mb-5 g-3 d-none" id="venomous">
+
+            </div>
+            <div class="nonvenomous row mb-5 g-3 d-none" id="nonvenomous">
+
+            </div>
+            <div class="row snake-description d-none">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jquery -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos js library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- my js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

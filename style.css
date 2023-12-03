@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* home page */
+.home,
+.snakes {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #001f3f, #003366);
+  color: #fff;
+}
+
+/* navbar lists */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #001f3f;
+  z-index: 1000;
+  opacity: 0.5;
+}
+
+.home-snake-box {
+  display: flex;
+  justify-content: end;
+}
+
+.home li a {
+  font-size: 18px;
+}
+
+.home li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #20c997;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.home li.active::after {
+  width: 100%;
+}
+
+.home li:hover::after {
+  width: 100%;
+}
+
+.active-with-after::after {
+  width: 100%;
+}
+/* logo image */
+.home .logo-img {
+  width: 50px;
+}
+
+/* main content */
+.main-content {
+  margin-top: 7%;
+}
+
+.main-content h1 {
+  font-size: 66px;
+}
+
+.main-content p {
+  font-size: 20px;
+}
+
+/* btns */
+.btn {
+  background: #20c997;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.btn:hover {
+  border: 1px solid #20c997;
+  color: #20c997;
+  transition: 0.5s;
+}
+
+/* main container */
+.main {
+  background: #e9e9e9;
+}
+
+/* about page */
+.about {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* .about-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} no need cuz of aos */
+
+.about h2 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.about p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* snakes */
+
+.snakes {
+  height: auto;
+}
+
+.snakes .card {
+  cursor: pointer;
+  background: #001f3f;
+  border: 2px solid #20c997;
+}
+
+.snakes .card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 31, 63, 0.5);
+}
+
+.snakes h3 {
+  font-size: 63px;
+}
+
+.snake-description h5 {
+  font-size: 2em;
+}
+
+.snake-description img {
+  width: 80%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 3%;
+  border: 3px solid #20c997;
+}
+
+.snakes li .nav-link {
+  color: #20c997 !important;
+}
+
+.snakes ul li a.active {
+  color: #001f3f !important;
+  font-weight: 500;
+}
+
+.btn-holder {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    opacity: 1;
+  }
+
+  .main-nav {
+    padding: 0 !important;
+  }
+
+  .home,
+  .about {
+    height: auto;
+  }
+
+  /* Logo Size */
+  .navbar .logo-img {
+    width: 30px;
+  }
+
+  .home-snake-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-snake-box img {
+    width: 200px;
+  }
+
+  .home h1 {
+    font-size: 3em;
+  }
+
+  /* Margin for Main Content */
+  .home .main-content {
+    margin-top: 20%;
+  }
+
+  /* Card Shadow in Snakes Section */
+  .snakes .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 31, 63, 0.3);
+  }
+
+  /* About Page */
+  .about-content {
+    position: static;
+    transform: none;
+    text-align: left;
+  }
+
+  .about h2 {
+    font-size: 3em;
+  }
+
+  /* Snakes Section */
+  .snake-description img {
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #20c997;
+  }
+
+  .snakes h3 {
+    font-size: 3em;
+  }
+
+  /* Snakes Navbar */
+  .snakes .navbar {
+    background: #001f3f;
+    opacity: 1;
+  }
+
+  /* Snakes Navbar Links */
+  .snakes .nav-link {
+    color: #fff !important;
+  }
+
+  .snakes ul li a.active {
+    color: #001f3f !important;
+    font-weight: 500;
+  }
+
+  /* Btn Holder in Snakes Section */
+  .btn-holder {
+    position: static;
+    top: auto;
+    left: auto;
+    text-align: center;
+  }
+}
